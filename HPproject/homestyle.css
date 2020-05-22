@@ -7,7 +7,7 @@
     }
 
 
-@media (min-width: 700px){
+@media (min-width: 775px){
     h1{
         font-size: 75px; 
         
@@ -15,13 +15,20 @@
     h2{
         font-size: 25px; 
     }
+    .break{
+        display: block; 
+    }
+
 }
-@media (max-width: 699px){
+@media (max-width: 774px){
     h1{
         font-size: 30px; 
     }
     h2{
         font-size:10px; 
+    }
+    .break{
+        display: none; 
     }
 }
 
@@ -49,3 +56,4 @@ h5{
 body{
     background-color:#faf7f0
 }
+
