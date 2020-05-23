@@ -16,10 +16,13 @@
         font-size: 25px; 
     }
     h3{
-        font-size: 35px; 
+        font-size: 50px; 
     }
     .break{
         display: block; 
+    }
+    .infotext{ 
+        font-size: 17px; 
     }
 
 }
@@ -31,10 +34,13 @@
         font-size:10px; 
     }
     h3{ 
-        font-size: 10px; 
+        font-size: 25px; 
     }
     .break{
         display: none; 
+    }
+    .infotext{ 
+        font-size: 13px; 
     }
 }
 
@@ -54,11 +60,21 @@ h2{
 
 }
 h3{
-    font-family: 'Cinzel';
-    font-weight: bold;
+    
+    font-family: "Unna";
     text-align: left;
     color: #787878;
-    margin-left: 15%;
+}
+
+.infotext{
+    font-family: 'Cormorant';
+    text-align: left;
+    
+}
+
+#schoolinfo{ 
+    background-color: #e0e0e0;
+    color: black;  
 }
 
 h6{ 
@@ -75,6 +91,13 @@ h5{
 }
 body{
     background-color:#faf7f0
+}
+.infopic{
+    border-style: groove;
+    border-radius: 1px;
+    border-color: lightgrey;
+    padding: 1%
+
 }
 .center {
     display: block;
