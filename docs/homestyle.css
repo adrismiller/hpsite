@@ -15,6 +15,9 @@
     h2{
         font-size: 25px; 
     }
+    h3{
+        font-size: 35px; 
+    }
     .break{
         display: block; 
     }
@@ -26,6 +29,9 @@
     }
     h2{
         font-size:10px; 
+    }
+    h3{ 
+        font-size: 10px; 
     }
     .break{
         display: none; 
@@ -47,6 +53,14 @@ h2{
     color: #424242;
 
 }
+h3{
+    font-family: 'Cinzel';
+    font-weight: bold;
+    text-align: left;
+    color: #787878;
+    margin-left: 15%;
+}
+
 h6{ 
     font-family: 'Arial'; 
     color: #424242;
@@ -62,4 +76,10 @@ h5{
 body{
     background-color:#faf7f0
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
