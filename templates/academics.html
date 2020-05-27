@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %} Academics {% endblock %}
+
+{% block body %}
+
+<br> 
+<div class = "container"> 
+    <div class = "row"> 
+        <div class = "col-lg-8 col-sm-12">
+            <h3> Academics </h3>
+            <div class = "infotext">
+                    &ensp; The 1000-time winner of the Daily Prophet's best Wizarding academy worldwide, 
+                    Hogwarts School offers a wide variety of courses. First year students must take the following
+                    core classes: Transfiguration, Potions, Charms, Defense Against the Dark Arts, Herbology, 
+                    and Astronomy. In their third year, students may elect to add any combination of Muggle Studies.  
+                    Divination, Ancient, Runes, Mermish, Artithmancy, and Care of Magical Creatures, but must continue 
+                    taking the 6 core classes through their 5th year, at which point they will take the Ordinary Wizarding 
+                    Levels (O.W.L.s). In their 6th year, student will continue any courses in which a satisfactory O.W.L. 
+                    score is achieved. 
+
+            </div>
+        </div>
+         <div class = "col-lg-4 col-sm-6">
+             <img src = "{{url_for('static', filename='images/dadaclass.jpg')}}" alt = "Class" width = 100% style = "margin-bottom: 2%;" class ="infopic"> 
+         </div>
+
+    </div>
+
+    <div class = "row"> 
+
+        <div class = "col-lg-4 col-sm-8">
+            <h3>
+                <img src = "{{url_for('static', filename='images/potioncrop.jpg')}}"  alt = "potions" width = 100% class ="infopic" > 
+            </h3>
+        </div>
+        
+        <div class = "col-lg-4 col-sm-8"> 
+            <img src = "{{url_for('static', filename='images/croppedflit.jpg')}}" alt = "flitwick" width = 100% class ="infopic"  > 
+        </div>
+        <div class = "col-lg-4 col-sm-8" id = "schoolinfo">
+             
+            <br>
+            <h2 >BY THE NUMBERS</h2>
+            <h2>9:1</h2>
+            <h4 style = "font-size: medium;">Student to Faculty Ratio</h4>
+            <h2>Over 100</h2>
+            <h4 style = "font-size: medium;">Secret Passages</h4>
+            <h2>71% </h2>
+            <h4 style = "font-size: medium;"> Classes with Fewer than 20 Students</h4>
+            <h2> 99% </h2>
+            <h4 style = "font-size: medium;">First Year Survival Rate</h4> 
+            <h2> 2 </h2>
+            <h4 style = "font-size: medium;"> (at least) Hidden Chambers</h4> 
+        </div>
+
+    </div>
+</div>
+
+<br> 
+<br>
+<br> 
+<br> 
+<br>
+
+{% endblock %}
+
+ 
+ 
+</html>

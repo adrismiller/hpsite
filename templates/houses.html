@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block title %} Houses {% endblock %}
+
+{% block body %}
+<div class = "container"> 
+    <div class = "row"> 
+       <div class = "col-lg-3 col-sm-6"> 
+            <img src = "{{url_for('static', filename='images/g.jpg')}}" alt = "Gryffindor" width = 85%> 
+            <br> <br> 
+            <i>
+            You might belong in Gryffindor,<br> 
+            Where dwell the brave at heart,<br> 
+            Their daring, nerve, and chivalry<br> 
+            Set Gryffindors apart;<br>
+            </i>
+
+        </div>
+        <div class = "col-lg-3 col-sm-6"> 
+
+           <img src="{{url_for('static', filename='images/r.jpg')}}" width= 85%> 
+           <br> <br> 
+           <i> 
+           Or yet in wise old Ravenclaw,<br> 
+           if you've a ready mind,<br> 
+           Where those of wit and learning,<br> 
+           Will always find their kind;<br> 
+          </i>
+        </div>
+        <div class = "col-lg-3 col-sm-6"> 
+            <img src="{{url_for('static', filename='images/h.jpg')}}" width = 85%> 
+            <br> <br> 
+            <i>
+            You might belong in Hufflepuff,<br> 
+            Where they are just and loyal,<br> 
+            Those patient Hufflepuffs are true
+            And unafraid of toil;<br> 
+             </i>
+
+           
+       </div>
+       <div class = "col-lg-3 col-sm-6"> 
+           <img src="{{url_for('static', filename='images/s.jpg')}}" width = 85%> 
+           <i>
+           Or perhaps in Slytherin<br> 
+           You'll make your real friends,<br> 
+           Those cunning folks use any means<br> 
+           To achieve their ends.
+       </i> 
+           
+       </div> 
+   </div> 
+   <hr>
+
+
+   <div class = "row"> 
+       <div class = "col-lg-6 col-sm-12"> 
+           <strong> <h3>  Houses </h3> </strong>
+           <div class = "infotext">
+               &ensp; Upon arrival to Hogwarts, first-year students are sorted into one of four Houses,
+               Gryffindor, Hufflepuff, Ravenclaw, and Slytherin. The House system plays an integral 
+               role in the Hogwarts experience. Students will eat, live, and take classes with their 
+               house. Throughout the school year, students will be rewarded points for sucesses, 
+               and given deductions for misbehavior. At the end of the school-year, the house with
+               the most points is rewarded the House Cup! 
+            
+           </div>
+        </div>
+        <div class = "col-lg-6 col-sm-12">
+           <img src = "{{url_for('static', filename='images/houses.jpg')}}" alt = house width = 80% class = "infopic">
+       </div>
+
+   </div>        
+</div>
+<br> 
+<br> 
+<br> 
+<br> 
+
+{% endblock %}
+       
+       
+        

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %} About Us {% endblock %}
+{% block body %}
+<div class = "container"> 
+    <div class = "row"> 
+        <div class = "col-lg-6 col-sm-12"> 
+            <h3>About Us</h3> 
+            <div class = "infotext"> 
+                Hogwarts is a top-ranked institution for magic located in the highlands of Scoland. 
+                Founded in 990 A.D. by Godric Gryffindor, Rowena Ravenclaw, Helga Hufflepuff, and Salazar Slytherin, 
+                Hogwarts is the oldest school for witchcraft and wizardry in the world. The school is bored by a magical forest, 
+                a wide lake, and the small town of Hogsmeade, one of the oldest wizarding settlements in Britain. 
+            </div>
+        </div>
+        <div class = "col-lg-3 col-sm-12"> 
+             <img src = "{{url_for('static', filename='images/aboutus.jpg')}}" width = 100% class = "infopic"> 
+        </div>
+        <div class = "col-lg-3 col sm-12>">
+            <img src ="{{url_for('static', filename='images/inside.jpg')}}"  width = 100% class = "infopic"> 
+        </div> 
+        </div>
+</div>
+
+{% endblock %}
+
+        
+    
