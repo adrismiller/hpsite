@@ -4,9 +4,7 @@ from flask import Flask, session, render_template, request
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
-#from models import *
-#import os 
-#from flask import Flask 
+from flask_socketio import SocketIO, emit
 from flask_sqlalchemy import SQLAlchemy 
 
 app = Flask(__name__)
@@ -17,16 +15,15 @@ if not os.getenv("DATABASE_URL"):
 # Configure session to use filesystem
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
+
+socketio = SocketIO(app)
 Session(app)
 
-# new stuff
+
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
- 
-# Set up database old stuff
-#engine = create_engine(os.getenv("DATABASE_URL"))
-#db = scoped_session(sessionmaker(bind=engine))
 db = SQLAlchemy(app) 
 db.init_app(app)
 
@@ -50,6 +47,7 @@ class Book(db.Model):
         db.session.add(r)
         db.session.commit()
 
+
 class Review(db.Model): 
     __tablename__ = "reviews"
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
@@ -58,3 +56,5 @@ class Review(db.Model):
     review = db.Column(db.String, nullable=False)
     score = db.Column(db.Integer, nullable=False)
     book_id = db.Column(db.Integer, db.ForeignKey("books.id"), nullable=False)
+
+  

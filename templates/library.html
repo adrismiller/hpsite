@@ -7,22 +7,26 @@
 
 <div class = "container"> 
     <div class = "row"> 
-        <div class = "col-lg-6 col-sm-12">
+        <div class = "col-lg-7 col-sm-12">
             <div class = "infotext"> 
                 The Hogwarts Library is home to a great deal of books, both magical and muggle. 
                 To search for any Muggle books we may have, enter sajfas;ja'gid in the search field below
                 to see ... 
 
             <br> 
-            <form action = " {{ url_for('search')}} " method = "post"> 
-                <input type = "text" name = "search" placeholder="Enter Author/Book Title/ISBN">
-                <button> Search </button>
 
-            </form>
             </div>  
         </div> 
+        <div class = "col-lg-5 col-sm-12"> 
+            <img src = "{{ url_for('static', filename='images/lib.jpg') }}" alt = express width = 100%> 
+        </div>
     </div>
 </div> 
+
+<br> 
+<br>
+<br> 
+<br> 
 
 
 {% endblock %}

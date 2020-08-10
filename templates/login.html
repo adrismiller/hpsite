@@ -1,0 +1,35 @@
+{% extends "layout.html" %} 
+
+{% block title %} Library {% endblock %}
+
+
+{% block body %}
+
+<div class = "container"> 
+    <div class = "row"> 
+
+            <div class = "infotext"> 
+                <strong> Login  </strong<br> 
+                <form action = "{{ url_for('login')}}" method = "post"> 
+                    <input type = "text" name = "username" placeholder= "Username"> <br>
+                    <input type  = "password" name  = "password" placeholder = "Password"> <br> 
+                    <button> Login </button> 
+                    {{ message }}
+                     <a style = "font-size:smaller"; href = "{{url_for('register')}}"> Register Here</a>
+                    
+                   
+                </form>
+        </div>
+        <div class = "col-lg-1 col-sm-12"> 
+            <div class = "infotext"> 
+                <form action = "{{url_for('index')}}" method = "post" value="yes" name="logout"> 
+                    <button>Logout</button>
+                </form>
+            </div>
+       
+        </div>
+    </div>
+</div> 
+
+
+{% endblock %}

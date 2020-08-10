@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block body %}
+
+<div class = 'container'> 
+    <div class = 'row'>
+       
+        <div class = "col-lg-4 col-sm-12"> 
+            <h3> {{title}} </h3> 
+            <div class = "infotext"> 
+        
+            Author: {{author }} <br> 
+            Year Published: {{year}} <br> 
+            ISBN:  {{isbn}}<br> 
+            Rated by Goodreads: {{rating}} <br> 
+            Number of Goodreads Ratings: {{num_reviews}}
+            <br>
+            Hogwarts Reviews: <br> 
+                <ol>
+            {% for review in reviews %}
+                <li> {{review.review}} <br></li>
+            {% endfor %}
+                 </ol>
+            </div>
+        </div>
+
+        <div class = "col-lg-8 col-sm-12"> 
+            <div class = "infotext">
+                <h4>Submit a review for {{title}} here!  </h4>
+                <form  action = '{{url_for("book_page", id=id)}}' method = "post"> 
+                    <input style = "padding: 75px" textarea rows="50" cols="25" type = "text" name = "review" placeholder= ""> <br>
+                    <button> Submit </button> 
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+{% endblock%}
+

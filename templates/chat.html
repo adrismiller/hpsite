@@ -1,0 +1,36 @@
+{% extends "layout.html" %} 
+
+{% block title %} Library {% endblock %}
+
+
+{% block body %}
+    <div class = 'container'> 
+        <div class = 'row'> 
+            <div class = 'col-lg-3 col-sm-1'>
+                <h3> </h3>
+            </div>
+
+            <div class = 'col-lg-6 col-sm-12' > 
+                <br><br>
+                <h3 style ='text-align: center;'> Chatroom</h3>
+                <br> 
+
+            {% for channel in channels %}
+                <h4 style = "background-color: #fffdf2;padding:12px;  font-family: 'Cormorant'; text-align: center;"> {{channel}} </h4>
+                <br> 
+
+                {% endfor %}
+             </div>
+             <div class = 'col-lg-3 col-sm-1'>
+                <h4> create new channel</h4>
+            </div>
+
+    </div>
+</div>
+<br> 
+<br>
+<br> 
+<br> 
+
+
+{% endblock %}
