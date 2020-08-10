@@ -131,10 +131,6 @@ def aboutus():
 def academics():
     return render_template("academics.html")
 
-@app.route("/admissions/")
-def admissions():
-    return render_template("admissions.html")
-
 @app.route("/athletics/")
 def athletics():
     return render_template("athletics.html")
@@ -143,27 +139,35 @@ def athletics():
 def houses():
     return render_template("houses.html")
 
-@app.route("/studentlife/")
-def studentlife():
-    return render_template("studentlife.html")
 
 # html files haven't been completed :(
+
+
+@app.route("/studentlife/")
+def studentlife():
+    return render_template("nomuggles.html")
+
+@app.route("/admissions/")
+def admissions():
+    return render_template("nomuggles.html")
+
+
 @app.route("/news/")
 def news():
-    return render_template('news.html')
+    return render_template('nomuggles.html')
 
 @app.route("/secrecy/")
 def secrecy():
-    return render_template('secrecy.html')
+    return render_template('nomuggles.html')
 
 @app.route("/underage/")
 def underage(): 
-    return render_template('underage.html')
+    return render_template('nomuggles.html')
 
 @app.route("/hogsmeade/")
 def hogsmeade(): 
-    return render_template('hogsmeade.html')
+    return render_template('nomuggles.html')
 
 @app.route("/alumni/")
 def alumni(): 
-    return render_template("alumni.html")
+    return render_template('nomuggles.html')
