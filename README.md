@@ -9,3 +9,15 @@ Flask application for a Hogwarts school site!
     the books on goodreads, and some books from Harry Potter) by author, title,
     or isbn, leave reviews, and see other people's reviews. 
    
+ # Site Images
+ Home page
+![Alt text](https://github.com/adrismiller/hpsite/blob/master/sitepics/homepage.png "Home Page")
+Houses page
+![Alt text](https://github.com/adrismiller/hpsite/blob/master/sitepics/houses.png "Houses Page")
+Registration Page 
+![Alt text](https://github.com/adrismiller/hpsite/blob/master/sitepics/register.png "Register Page")
+Search Page Example 
+![Alt text](https://github.com/adrismiller/hpsite/blob/master/sitepics/search1.png "Search Page")
+![Alt text](https://github.com/adrismiller/hpsite/blob/master/sitepics/search2.png "Search Page")
+![Alt text](https://github.com/adrismiller/hpsite/blob/master/sitepics/search3.png "Search Page")
+![Alt text](https://github.com/adrismiller/hpsite/blob/master/sitepics/search4.png "Search Page")
