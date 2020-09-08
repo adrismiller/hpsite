@@ -7,7 +7,8 @@ Flask application for a Hogwarts school site!
     create a functioning login system and a search feature
     - Logged in users can search the catelogue (which consists of all 
     the books on goodreads, and some books from Harry Potter) by author, title,
-    or isbn, leave reviews, and see other people's reviews. 
+    or isbn, leave reviews, and see other people's reviews.
+ - Not hosted anywhere but site is shown in  https://youtu.be/R6BxtlgzpJ0  
    
  # Site Images
  Home page
